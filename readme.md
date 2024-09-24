@@ -15,13 +15,14 @@ The project aims to build a model that can identify and classify named entities 
 
 The model consists of the following layers:
 
- • Embedding Layer: Maps words to their corresponding vector representations.
- • LSTM Layer: Processes the word embeddings sequentially to capture long-range dependencies.
- • Dense Layer: Maps the LSTM output to the predicted labels.
+* **Embedding Layer**: Maps words to their corresponding vector representations.
+* **LSTM Layer**: Processes the word embeddings sequentially to capture long-range dependencies.
+* **Dense Layer**: Maps the LSTM output to get logits.
+* **Softmax Layer**: Converts logits to probabilities.
 
 ## Results
 
-The model achieves an accuracy of over 95% on the test set.
+The model achieves an accuracy of over 95% on the test set and 96% accuracy in train set.
 
 ## Usage
 
