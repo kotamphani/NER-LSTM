@@ -4,7 +4,7 @@ This repository contains a simple implementation of Named Entity Recognition (NE
 The model is trained on a large dataset of sentences and their corresponding labels from Kaggle, and can then be used to identify named entities in new text.
 
 ## Project Overview
-The project aims to build a model that can identify and classify named entities in text, such as people, organizations, locations, and dates. The model is trained on a large dataset of sentences and their corresponding labels.
+The project aims to build a model that can identify and classify named entities in text, such as people, organizations, locations, and dates.
 
 ## Libraries Used
 
