@@ -1,26 +1,28 @@
 # Named Entity Recognition (NER) using LSTM
 
-This project implements a Named Entity Recognition (NER) model using a Long Short-Term Memory (LSTM) network in PyTorch. The model is trained on a large dataset of sentences and their corresponding labels, and can then be used to identify named entities in new text.
+This repository contains a simple implementation of Named Entity Recognition (NER) using a Long Short-Term Memory (LSTM) network in PyTorch.
+The model is trained on a large dataset of sentences and their corresponding labels from Kaggle, and can then be used to identify named entities in new text.
 
 ## Project Overview
-
-The project consists of the following components:
-
-* **Data Preprocessing:** The dataset is preprocessed to convert words and tags into numerical indices.
-* **Model Architecture:** An LSTM network is defined with embedding, LSTM, and dense layers.
-* **Training:** The model is trained using the Adam optimizer and cross-entropy loss.
-* **Evaluation:** The model is evaluated on a separate validation and test set to measure its performance.
-* **Prediction:** The trained model can be used to predict named entities in new text.
+The project aims to build a model that can identify and classify named entities in text, such as people, organizations, locations, and dates. The model is     
+trained on a large dataset of sentences and their corresponding labels.
 
 ## Libraries Used
 
-| Library | Description |
-|---|---|
-| PyTorch | A deep learning framework for building and training neural networks. |
-| NumPy | A library for numerical computing in Python. |
-| torchsummary | A library for summarizing the architecture of PyTorch models. |
-| torch.nn.functional | A module for common neural network functions. |
-| torch.optim | A module for optimizers used in training. |
+* **PyTorch:** A deep learning framework for building and training neural networks.
+* **NumPy:** A library for numerical computing in Python.
+
+## Model Architecture
+
+The model consists of the following layers:
+
+ • Embedding Layer: Maps words to their corresponding vector representations.
+ • LSTM Layer: Processes the word embeddings sequentially to capture long-range dependencies.
+ • Dense Layer: Maps the LSTM output to the predicted labels.
+
+## Results
+
+The model achieves an accuracy of over 95% on the test set.
 
 ## Usage
 
@@ -29,10 +31,6 @@ The project consists of the following components:
 3. **Train the model:** The model will be trained on the training data.
 4. **Evaluate the model:** The model will be evaluated on the validation and test data.
 5. **Predict named entities:** Use the `predict` function to predict named entities in new text.
-
-## Results
-
-The model achieves an accuracy of over 95% on the test set.
 
 ## Future Work
 
